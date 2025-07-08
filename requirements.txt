@@ -1,0 +1,30 @@
+# Audio-Gateway Dependencies
+Flask==3.0.0
+Werkzeug==3.0.1
+python-dotenv==1.0.0
+
+# Kafka Dependencies
+kafka-python==2.0.2
+
+# WebSocket Dependencies (for Transcription-Service)
+websockets==12.0
+
+# AI Model Dependencies (migrated from tasks.py)
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.24.0
+
+# Audio Processing (migrated from transcription_logic.py)
+mutagen==1.47.0
+pydub>=0.25.1
+
+# Text Processing (migrated from transcription_logic.py)
+nltk>=3.8
+
+# Testing Dependencies
+pytest>=7.4.0
+pytest-mock>=3.12.0
+requests>=2.31.0  # for E2E tests
+
+# Optional: For better error handling and monitoring
+rich>=13.6.0  # for beautiful console output
